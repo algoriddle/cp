@@ -1,0 +1,12 @@
+Aquarius 21
+Pisces  20
+Aries 21
+Taurus 21
+Gemini  22
+Cancer 22
+Leo  23
+Virgo 22
+Libra  24
+Scorpio  24
+Sagittarius 23
+Capricorn 23
