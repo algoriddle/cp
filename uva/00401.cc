@@ -8,27 +8,27 @@ int cm[256];
 int main() {
   ios::sync_with_stdio(false);
   memset(cm, 0, sizeof cm);
-  cm['A'] = 'A';
-  cm['E'] = '3';
-  cm['H'] = 'H';
-  cm['I'] = 'I';
-  cm['J'] = 'L';
-  cm['L'] = 'J';
-  cm['M'] = 'M';
-  cm['S'] = '2';
-  cm['T'] = 'T';
-  cm['U'] = 'U';	
-  cm['V'] = 'V';
-  cm['W'] = 'W';	
-  cm['X'] = 'X';
-  cm['Y'] = 'Y';
-  cm['Z'] = '5';
-  cm['O'] = 'O';
-  cm['1'] = '1';
-  cm['2'] = 'S';
-  cm['3'] = 'E';
-  cm['5'] = 'Z';
-  cm['8'] = '8';
+  cm[static_cast<unsigned>('A')] = 'A';
+  cm[static_cast<unsigned>('E')] = '3';
+  cm[static_cast<unsigned>('H')] = 'H';
+  cm[static_cast<unsigned>('I')] = 'I';
+  cm[static_cast<unsigned>('J')] = 'L';
+  cm[static_cast<unsigned>('L')] = 'J';
+  cm[static_cast<unsigned>('M')] = 'M';
+  cm[static_cast<unsigned>('S')] = '2';
+  cm[static_cast<unsigned>('T')] = 'T';
+  cm[static_cast<unsigned>('U')] = 'U';
+  cm[static_cast<unsigned>('V')] = 'V';
+  cm[static_cast<unsigned>('W')] = 'W';
+  cm[static_cast<unsigned>('X')] = 'X';
+  cm[static_cast<unsigned>('Y')] = 'Y';
+  cm[static_cast<unsigned>('Z')] = '5';
+  cm[static_cast<unsigned>('O')] = 'O';
+  cm[static_cast<unsigned>('1')] = '1';
+  cm[static_cast<unsigned>('2')] = 'S';
+  cm[static_cast<unsigned>('3')] = 'E';
+  cm[static_cast<unsigned>('5')] = 'Z';
+  cm[static_cast<unsigned>('8')] = '8';
   string s;
   while (cin >> s) {
     bool p = true, m = true;
@@ -38,7 +38,7 @@ int main() {
       if (*left != *right) {
         p = false;
       }
-      if (cm[*left] != *right) {
+      if (cm[static_cast<unsigned>(*left)] != *right) {
         m = false;
       }
       ++left;

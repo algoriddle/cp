@@ -24,6 +24,7 @@ vector<int> abo_split(string p) {
   case 'B': return { 1, 2 };
   case 'O': return { 2 };
   }
+  return { };
 }
 
 vector<int> rh_split(char r) {
@@ -54,6 +55,7 @@ vector<int> abo_possible(int p) {
   case 1: return {1, 2};
   case 2: return {0, 1, 3};
   }
+  return { };
 }
 
 void print(const set<string>& r) {

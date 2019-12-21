@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
   ios::sync_with_stdio(false);
-  int x, y[2], i;
+  int x, y[2];
   while (cin >> x && x) {
     y[0] = 0;
     y[1] = 0;
