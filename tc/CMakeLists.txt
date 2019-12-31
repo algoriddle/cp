@@ -1,0 +1,5 @@
+cmake_minimum_required (VERSION 3.3.1 FATAL_ERROR)
+set(CMAKE_CXX_STANDARD 11)
+project (tc CXX)
+add_executable(srm_773_2_250 srm_773_2_250.cc)
+add_executable(srm_773_2_500 srm_773_2_500.cc)
